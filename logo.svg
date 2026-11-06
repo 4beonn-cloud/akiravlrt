@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="아스카 대리팀 로고">
+  <!-- 흰색 A + 궤도 링. 배경 투명 — 어두운 페이지 위에서 그대로 올라간다. -->
+  <path fill="#ffffff" d="M312 224
+                          L416 364
+                          L352 364
+                          L312 300
+                          L274 364
+                          L194 364
+                          Q206 333 247 287
+                          Q280 249 312 224 Z"/>
+  <ellipse cx="306" cy="304" rx="126" ry="44"
+           transform="rotate(-15 306 304)"
+           fill="none" stroke="#ffffff" stroke-width="15"/>
+</svg>
