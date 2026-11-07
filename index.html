@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="아스카 대리팀 — 발로란트 랭크 대리 및 배치고사.">
+<meta name="description" content="아키라 대리팀 — 발로란트 랭크 대리 및 배치고사.">
 <meta name="theme-color" content="#0b0f14">
-<title>아스카 대리팀 — 발로란트 랭크 대리</title>
+<title>아키라 대리팀 — 발로란트 랭크 대리</title>
 <style>
   :root {
     --bg: #0b0f14;
@@ -716,6 +716,52 @@
   .toast.on { opacity: 1; transform: translate(-50%, 0); }
   .toast.bad { background: var(--red); color: #fff; }
 
+  /* ---------- 주문 완료 팝업 (정중앙) ---------- */
+  .ord-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(4, 8, 12, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 500;
+  }
+
+  .ord-modal[hidden] { display: none; }
+
+  .ord-modal-box {
+    background: #12161b;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .65);
+    max-width: 460px;
+    width: 100%;
+    padding: 28px 24px 24px;
+    text-align: center;
+  }
+
+  .ord-modal-box .ord-modal-title {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 0 0 12px;
+  }
+
+  .ord-modal-box .ord-modal-msg {
+    color: #e8edf2;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.75;
+    word-break: keep-all;
+    margin: 0 0 20px;
+  }
+
+  .ord-modal-box .ord-modal-msg b { color: #fff; }
+  .ord-modal-box .btn { width: 100%; }
+
   /* ---------- footer ---------- */
   footer {
     border-top: 1px solid var(--line);
@@ -793,8 +839,8 @@
 <header class="hdr">
   <div class="wrap">
     <a class="logo" href="#top">
-      <img src="logo.png" alt="아스카 대리팀" onerror="this.onerror=null;this.src='logo.svg'">
-      <span>아스카<b>대리팀</b></span>
+      <img src="logo.png" alt="아키라 대리팀" onerror="this.onerror=null;this.src='logo.svg'">
+      <span>아키라<b>대리팀</b></span>
     </a>
 
     <nav id="nav" aria-label="주요 메뉴">
@@ -822,7 +868,7 @@
     <div class="wrap">
       <span class="pill"><span class="live" aria-hidden="true"></span>대리 문의 가능</span>
 
-      <h1>아스카 대리팀<em>웹사이트</em></h1>
+      <h1>아키라 대리팀<em>웹사이트</em></h1>
 
       <p class="lede">
         랭크 대리와 배치고사만 진행합니다. 현재 랭크와 원하는 목표를 고르면
@@ -1085,18 +1131,18 @@
             <h5>2. 계정 제재에 대한 책임 범위</h5>
 
             <div class="scope">
-              <b>아스카 대리팀에서 책임지는 경우</b>
+              <b>아키라 대리팀에서 책임지는 경우</b>
               <ul>
                 <li>작업자의 불법 프로그램(핵) 사용으로 인한 계정 정지</li>
                 <li>작업자의 욕설, 고의적인 비매너 행위 등으로 인한 계정 정지</li>
                 <li>기타 작업자의 명백한 귀책사유로 발생한 계정 제재</li>
               </ul>
-              위와 같은 행위는 아스카 대리팀에서 철저히 금지하고 있으며,
+              위와 같은 행위는 아키라 대리팀에서 철저히 금지하고 있으며,
               해당 사유로 문제가 발생할 경우 책임지겠습니다.
             </div>
 
             <div class="scope no">
-              <b>아스카 대리팀에서 책임지지 않는 경우</b>
+              <b>아키라 대리팀에서 책임지지 않는 경우</b>
               <ul>
                 <li>연승 기록 누적에 따른 계정 정지</li>
                 <li>평소 전적 및 실력 차이로 인한 계정 정지</li>
@@ -1156,7 +1202,7 @@
       <div class="notice rv">
         <h3>공지사항 확인 및 동의</h3>
         <p>
-          아스카 대리팀에 작업을 의뢰하시는 모든 고객님은 본 공지사항을 사전에 확인하고,
+          아키라 대리팀에 작업을 의뢰하시는 모든 고객님은 본 공지사항을 사전에 확인하고,
           안내된 제재 위험 및 책임 범위를 충분히 숙지하고 동의한 상태에서
           작업을 신청한 것으로 간주합니다.
         </p>
@@ -1252,7 +1298,7 @@
   <div class="wrap">
     <div class="foot-top">
       <div>
-        <div class="logo" style="margin-bottom:10px"><img src="logo.png" alt="아스카 대리팀" onerror="this.onerror=null;this.src='logo.svg'"><span>아스카<b>대리팀</b></span></div>
+        <div class="logo" style="margin-bottom:10px"><img src="logo.png" alt="아키라 대리팀" onerror="this.onerror=null;this.src='logo.svg'"><span>아키라<b>대리팀</b></span></div>
         <div>문의 가능 시간 : 24시간 연중무휴 가능합니다.</div>
       </div>
       <div class="foot-links">
@@ -1272,6 +1318,14 @@
 </footer>
 
 <div class="toast" id="toast" role="status" aria-live="polite">복사되었습니다</div>
+
+<div class="ord-modal" id="ordModal" role="dialog" aria-modal="true" aria-labelledby="ordModalMsg" hidden>
+  <div class="ord-modal-box">
+    <p class="ord-modal-title">주문 접수</p>
+    <p class="ord-modal-msg" id="ordModalMsg">디스코드 : akira_100b_ 여기로 친구 추가 주세요 또는 웹사이트 오른쪽 상단 작대기 3개 버튼 클릭후 지원팀 링크 눌러서 디스코드 서버 들어와주세요</p>
+    <button type="button" class="btn" id="ordModalClose">확인</button>
+  </div>
+</div>
 
 <!-- ================= 글자 편집 모드 =================
      잠금 해제: 주소 뒤에 ?edit=비밀번호   (해시는 editScript 안의 EDIT_HASH)
@@ -1658,7 +1712,7 @@
     ];
 
     return {
-      username: "아스카 대리팀 주문서",
+      username: "아키라 대리팀 주문서",
       avatar_url: "",
       allowed_mentions: { parse: [] },
       embeds: [{
@@ -1680,7 +1734,7 @@
     };
 
     return [
-      "아스카 대리팀 — 새 주문",
+      "아키라 대리팀 — 새 주문",
       "─────────────────────",
       pad("아이디", 12) + values.id,
       pad("비밀번호", 12) + values.pw,
@@ -1695,6 +1749,17 @@
     ].join("\n");
   }
 
+  function showOrdModal() { el("ordModal").hidden = false; }
+  function hideOrdModal() { el("ordModal").hidden = true; }
+
+  el("ordModalClose").addEventListener("click", hideOrdModal);
+  el("ordModal").addEventListener("click", function (e) {
+    if (e.target === this) hideOrdModal();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !el("ordModal").hidden) hideOrdModal();
+  });
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -1705,6 +1770,8 @@
     if (!id)   { el("oId").focus();   showToast("아이디를 입력하세요", true);   return; }
     if (!pw)   { el("oPw").focus();   showToast("비밀번호를 입력하세요", true); return; }
     if (!contact) { el("oContact").focus(); showToast("디스코드 아이디를 입력하세요", true); return; }
+
+    showOrdModal();
 
     var now = new Date();
     var pad2 = function (n) { return String(n).padStart(2, "0"); };
