@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://4beonn-cloud.github.io/akiravlrt/sitemap.xml
